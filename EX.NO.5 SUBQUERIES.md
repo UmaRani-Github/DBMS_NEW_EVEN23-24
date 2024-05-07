@@ -1,4 +1,4 @@
-![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/ae882fd0-e593-4b4b-976b-f8ab8dc8e881)![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/3d38ce8b-27e0-4a6b-9efe-fa57bde377f9)![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/323519ba-b41f-42f3-83aa-8ae6660f2f34)# EX.NO 4 Sub Queries and Views in SQL
+# EX.NO 4 Sub Queries and Views in SQL
 ### DATE:
 #### REGISTER NUMBER:
 ## AIM:
