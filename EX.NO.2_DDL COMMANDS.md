@@ -1,5 +1,6 @@
 # EXP NO 2: DATA DEFINITION LANGUGE COMMANDS AND ITS CONSTRAINTS
-### DATE
+### DATE : 
+### REGISTER NUMBER: 
 ## AIM:
  To study and write DDL commands and different types of constraints.
 ## THEORY
