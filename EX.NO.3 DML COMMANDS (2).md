@@ -32,8 +32,17 @@ c) Inserting multiple records
    SELECT (column1,column2) FROM (Table Name)WHERE condition;
 ```
 # THEORY 
-
-# QUERY 
+## PROCEDURE
+1. Start the program. 
+2. Read the given query.
+3. create the table using 
+        CREATE TABLE (field_1 data_type(size),field_2 data_type(size), .. . );
+4. Drop the table by  DROP TABLE relation_name;
+5. Alter the table structure of the database by ALTER TABLE relation_name ADD (new field_1 data_type(size) );
+6. Specify the constraints NOT NULL,UNIQUE,DEFAULT,UNIQUE based on the query
+7. Show the output
+8. Stop the program
+   # QUERY 
 ## QUERY 1
 ## SQL QUERY 
 ## OUTPUT 
