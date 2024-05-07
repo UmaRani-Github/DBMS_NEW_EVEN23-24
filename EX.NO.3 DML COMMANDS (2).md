@@ -1,18 +1,36 @@
-# EX 2 Data Manipulation Language (DML) Commands and built in functions in SQL
+# EX.NO 2 Data Manipulation Language (DML) Commands and built in functions in SQL
 ## AIM:
-To create a manager database and execute DML queries using SQL.
-
+To Study and write DML Commands for given query.
 # THEORY
 ## DML(Data Manipulation Language)
 *  The SQL commands that deal with the manipulation of data present in the database belong to DML or Data Manipulation Language and this includes most of the SQL statements.
 *  It is the component of the SQL statement that controls access to data and to the database. Basically, DCL statements are grouped with DML statements.
-
-## List of DML commands: 
-1. INSERT: It is used to insert data into a table.
+## List of DML commands:
+```
+1. INSERT: It is used to insert data into a table
+Types of INSERT COMMAND
+a) Inserting a single record 
+  Syntax:
+   INSERT INTO < relation/table name> (field_1,field_2……field_n)VALUES (data_1,data_2, ...... data_n);
+b) Inserting all records from another relation
+  Syntax:
+   INSERT INTO relation_name_1 SELECT Field_1,field_2,field_n FROM relation_name_2 WHERE field_x=data;
+c) Inserting multiple records 
+  Syntax:
+    INSERT INTO relation_name field_1,field_2, ....field_n) VALUES (&data_1,&data_2,.......&data_n); 
 2. UPDATE: It is used to update existing data within a table.
+   Syntax:
+   UPDATE relation name SET Field_name1=data,field_name2=data, WHERE field_name=data;
 3. DELETE: It is used to delete records from a database table.
+   a) DELETE-FROM: This is used to delete all the records of relation. 
+   Syntax
+   DELETE FROM relation_name;
+   b) DELETE -FROM-WHERE: This is used to delete a selected record from a relation. 
+   Syntax: DELETE FROM relation_name WHERE condition;
 4. SELECT: The SELECT command shows the records of the specified table.
-
+   Syntax: 
+   SELECT (column1,column2) FROM (Table Name)WHERE condition;
+```
 ## Create the table as given below:
 ```sql
 create table manager(enumber number(6),ename char(15),salary number(5),commission number(4),annualsalary number(7),Hiredate date,designation char(10),deptno number(2),reporting char(10));
