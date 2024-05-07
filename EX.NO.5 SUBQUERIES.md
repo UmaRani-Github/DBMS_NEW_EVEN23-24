@@ -1,4 +1,4 @@
-# EX.NO 4 Sub Queries and Views in SQL
+# EX.NO 5 Sub Queries and Views in SQL
 ### DATE:
 #### REGISTER NUMBER:
 ## AIM:
