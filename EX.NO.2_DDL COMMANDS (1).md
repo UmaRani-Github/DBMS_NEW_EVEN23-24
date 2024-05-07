@@ -63,28 +63,14 @@ STEP 4:
 ### SQL QUERY:
 CREATE TABLE Employee (eid INTEGER PRIMARY KEY AUTOINCREMENT,name VARCHAR(50),designation VARCHAR(30));
 ### OUTPUT:
-pragma table_info('Employee');
-cid    name   typ  notnull     dflt_value  pk
------  -----  ---  ----------  ----------  ----------
-0      eid    INT  0                       1
-1      name   VAR  0                       0
-2      desig  VAR  0                       0
-
-### 2) Create a table name as "Students" with the following attributes
-ATTRIBUTE	id	name	address	grades	phone
-DATATYPE	INTEGER PRIMARY KEY AUTOINCREMENT	VARCHAR(50)	VARCHAR(30)	varchar(10)	number
-id as integer primarykey with autoincrement
-name as varchar(50)
-address as varchar(30)
-grades as varchar(10)
-phone as number
-
+![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/c0f06a33-4afd-4c30-b74b-8ffb47f022a6)
+### Query:
+![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/9ffc13e7-7791-46e5-b648-2aa451948bec)
 ### SQL QUERY: 
-
-
+![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/fdbfa19a-cd78-44b2-ac75-dd9e0c1382c9)
 ### OUTPUT:
-
-### 3) Alter the above student table by adding another attribute department
+![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/3135af0b-9d2f-4049-a778-3b461e12d7b5)
+### 
 
 ### SQL QUERY: 
 
