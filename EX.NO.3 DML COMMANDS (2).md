@@ -31,6 +31,13 @@ c) Inserting multiple records
    Syntax: 
    SELECT (column1,column2) FROM (Table Name)WHERE condition;
 ```
+# THEORY 
+
+# QUERY 
+## QUERY 1
+## SQL QUERY 
+## OUTPUT 
+
 ## Create the table as given below:
 ```sql
 create table manager(enumber number(6),ename char(15),salary number(5),commission number(4),annualsalary number(7),Hiredate date,designation char(10),deptno number(2),reporting char(10));
