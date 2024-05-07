@@ -1,115 +1,110 @@
-# EX.NO 2 Data Manipulation Language (DML) Commands and built in functions in SQL
+# EX.NO 4 Aggregation functions, Having and Group By clause in SQL
 ### DATE:
 #### REGISTER NUMBER:
 ## AIM:
-To Study and write DML Commands for given query.
+To study and write aggregation functions, group by and having clause with suitable examples.
 ## THEORY
-## DML(Data Manipulation Language)
-*  The SQL commands that deal with the manipulation of data present in the database belong to DML or Data Manipulation Language and this includes most of the SQL statements.
-*  It is the component of the SQL statement that controls access to data and to the database. Basically, DCL statements are grouped with DML statements.
-## List of DML commands:
+## Aggregation Functions
+*An aggregate function is a function that performs a calculation on a set of values, and returns a single value.
+*Aggregate functions are often used with the GROUP BY clause of the SELECT statement.
+## List of Aggregation functions:
 ```
-1. INSERT: It is used to insert data into a table
-Types of INSERT COMMAND
-a) Inserting a single record 
-  Syntax:
-   INSERT INTO < relation/table name> (field_1,field_2……field_n)VALUES (data_1,data_2, ...... data_n);
-b) Inserting all records from another relation
-  Syntax:
-   INSERT INTO relation_name_1 SELECT Field_1,field_2,field_n FROM relation_name_2 WHERE field_x=data;
-c) Inserting multiple records 
-  Syntax:
-    INSERT INTO relation_name field_1,field_2, ....field_n) VALUES (&data_1,&data_2,.......&data_n); 
-2. UPDATE: It is used to update existing data within a table.
-   Syntax:
-   UPDATE relation name SET Field_name1=data,field_name2=data, WHERE field_name=data;
-3. DELETE: It is used to delete records from a database table.
-   a) DELETE-FROM: This is used to delete all the records of relation. 
-   Syntax
-   DELETE FROM relation_name;
-   b) DELETE -FROM-WHERE: This is used to delete a selected record from a relation. 
-   Syntax: DELETE FROM relation_name WHERE condition;
-4. SELECT: The SELECT command shows the records of the specified table.
+1. MIN() - returns the smallest value within the selected column
+  Syntax: 
+      SELECT MIN(column_name)
+      FROM table_name
+      WHERE condition;
+2. MAX() - returns the largest value within the selected column
+  Syntax: 
+      SELECT MAX(column_name)
+      FROM table_name
+      WHERE condition;
+3.COUNT() - returns the number of rows in a set
+  Syntax: 
+      SELECT COUNT(column_name)
+      FROM table_name
+      WHERE condition; 
+4. SUM() - returns the total sum of a numerical column
    Syntax: 
-   SELECT (column1,column2) FROM (Table Name)WHERE condition;
+      SELECT SUM(column_name)
+      FROM table_name
+      WHERE condition;
+5.AVG() - returns the average value of a numerical column
+	Syntax: 
+    SELECT AVG(column_name)
+    FROM table_name
+    WHERE condition;
+```
+## GROUP BY CLAUSE
+```
+GROUP BY: This query is used to group all the records in a relation together for each and every value of a specific key(s) and then display them for a selected set of fields in the relation. 
+Syntax: 
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+ORDER BY column_name(s);
+```
+## HAVING CLAUSE 
+```
+The HAVING clause was added to SQL because the WHERE keyword could not be used with aggregate functions. The HAVING clause must follow the GROUP BY clause in a query and must also precede the ORDER BY clause if used. 
+Syntax: 
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+HAVING condition
+ORDER BY column_name(s);
 ```
 ## PROCEDURE
 ```
 1. Start the program. 
 2. Read the given query.
-3. insert values into the table using 
-   INSERT INTO < relation/table name> (field_1,field_2……field_n)VALUES (data_1,data_2, ...... data_n);
-4. Update the existing data within a table by UPDATE command by
-   UPDATE relation name SET Field_name1=data,field_name2=data, WHERE field_name=data;
-5. Delete the records in a table by DELETE command
-   DELETE FROM relation_name WHERE condition;
-6. Use  SELECT command shows the records of the specified table.
-     SELECT (column1,column2) FROM (Table Name)WHERE condition;
+3. Perform the given aggregation function using MIN(),MAX(),COUNT(),SUM(),AVG().
+4. To group all the records in a relation together by GROUP BY clause.
+    SELECT column_name(s)
+    FROM table_name
+    WHERE condition
+    GROUP BY column_name(s);
+5. To specify the conditions in a grouped records by HAVING clause.
+    SELECT column_name(s)
+    FROM table_name
+    WHERE condition
+    GROUP BY column_name(s)
+    HAVING condition;
 7. Show the output
 8. Stop the program
 ```
-## QUERY 
-## QUERY 1
-![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/14403ec0-4bdf-4f4d-9493-c1e89a3eb969)
-## SQL QUERY 
-select categoryName,description from categories order by categoryName;
-## TEST QUERY AND ITS OUTPUT  
-![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/e876a627-d587-4dc1-a47b-5bdbf6a6f3dd)
-## QUERY 2
-![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/1ecc7406-81b9-49a8-87af-1060e3259731)
-## SQL QUERY 
-SELECT * FROM customer WHERE city = 'London' AND grade > 200;
-## TEST QUERY AND ITS OUTPUT  
-![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/0f5944aa-17e2-480d-89ad-3cae7e530a42)
-## QUERY 3
-![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/c868fa42-61b9-465f-85a7-34ab2c23d23f)
-## SQL QUERY
-SELECT * FROM orders WHERE (purch_amt < 200 OR NOT (ord_date >= '2012-02-10' AND customer_id < 3009));
-## TEST QUERY AND ITS OUTPUT 
-![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/f5af2a79-6e77-4687-9fb9-e94caf16f945)
-# QUERY 4
-![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/334b9113-b1e1-4762-a92e-72bbd778938c)
-## SQL QUERY 
-SELECT * FROM customer WHERE grade IS NULL;
-## TEST QUERY AND ITS OUTPUT  
-![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/3d1e613c-c356-4806-85ef-32f35f2949ee)
-## QUERY 5
-![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/683b7c1b-d5f6-43bd-a8ea-17116b586615)
-## SQL QUERY 
-DELETE FROM surgeries WHERE  surgery_id = 3 or  surgeon_id = 4;
-## TEST QUERY AND ITS OUTPUT 
-![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/42b96061-dd53-4921-975f-99ee9f9c176d)
-## QUERY 6
-![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/ec654473-157e-4113-842b-954c6ad04675)
-## SQL QUERY 
-DELETE FROM customer WHERE OPENING_AMT BETWEEN 4000 AND 6000;
-## TEST QUERY AND ITS OUTPUT 
-![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/c037a869-d401-4765-b88d-87e5e40287c4)
-## QUERY 7
-![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/a3493209-8ced-4051-b2f7-4a7c9c399790)
-## SQL QUERY 
-DELETE FROM customer WHERE LENGTH(CUST_NAME) = 6;
-## TEST QUERY AND ITS OUTPUT 
-![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/317e2d2d-55bd-4b6a-86ad-fa188f0c219c)
-## QUERY 8
-![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/4900a11a-967d-4e3b-b77c-c63f807136c9)
-## SQL QUERY
-UPDATE products SET product_name = 'Grapefruit' WHERE product_id = 4;
-## TEST QUERY AND ITS OUTPUT 
-![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/221f80e8-fbbd-4f49-8b33-c26e921f5d14)
-## QUERY 9
-![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/d3ef85de-b0f9-4e7a-9149-0f9606028daa)
-## SQL QUERY 
-UPDATE suppliers SET supplier_name = 'A1 Suppliers' WHERE supplier_id = 8;
-## TEST QUERY AND ITS OUTPUT 
-![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/c6ebd25e-606f-4db9-8dde-d38bb7a50508)
-## QUERY 10
-![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/cab90fce-a721-4318-8424-54f4f2258e9c)
-## SQL QUERY 
-UPDATE products SET reorder_lvl = 40  WHERE category = 'Grocery';
-## TEST QUERY AND ITS OUTPUT 
-![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/a2da7c2d-4321-45e0-a1ea-20fabd42e805)
-
-
-## RESULT :
+### QUERY 
+### QUERY 1
+### SQL QUERY 
+### TEST QUERY AND ITS OUTPUT  
+### QUERY 2
+### SQL QUERY 
+### TEST QUERY AND ITS OUTPUT
+### QUERY 3
+### SQL QUERY 
+### TEST QUERY AND ITS OUTPUT
+### QUERY 4
+### SQL QUERY 
+### TEST QUERY AND ITS OUTPUT
+### QUERY 5
+### SQL QUERY 
+### TEST QUERY AND ITS OUTPUT
+### QUERY 6
+### SQL QUERY 
+### TEST QUERY AND ITS OUTPUT
+### QUERY 7
+### SQL QUERY 
+### TEST QUERY AND ITS OUTPUT
+### QUERY 8
+### SQL QUERY 
+### TEST QUERY AND ITS OUTPUT
+### QUERY 9
+### SQL QUERY 
+### TEST QUERY AND ITS OUTPUT
+### QUERY 10
+### SQL QUERY 
+### TEST QUERY AND ITS OUTPUT
+### RESULT :
 Thus the basic DML commands are executed.
