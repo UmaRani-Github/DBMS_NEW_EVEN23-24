@@ -173,4 +173,4 @@ HAVING AVG(Price) BETWEEN 10 AND 15;
 ### TEST QUERY AND ITS OUTPUT
 ![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/9f50599c-dcf0-4ccd-b039-8e8d246dead4)
 ### RESULT :
-Thus the basic DML commands are executed.
+Thus the basic aggregation commands are executed.
