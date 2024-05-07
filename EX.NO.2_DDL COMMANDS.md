@@ -52,59 +52,69 @@ CREATE TABLE Table_Name(column_name data_type(size) FOREIGN KEY(column_name) REF
 Syntax:
 CREATE TABLE Table_Name(col_name1,col_name2,col_name3 DEFAULT ‘’);
 ## PROCEUDRE
-STEP 1. Start the program. 
-STEP 2 : Read the given query.
-STEP 3: create the table using 
+1. Start the program. 
+2. Read the given query.
+3. create the table using 
         CREATE TABLE (field_1 data_type(size),field_2 data_type(size), .. . );
-STEP 4: 
-
-## Query:
+4. Drop the table by  DROP TABLE relation_name;
+5. Alter the table structure of the database by ALTER TABLE relation_name ADD (new field_1 data_type(size) );
+6. Specify the constraints NOT NULL,UNIQUE,DEFAULT,UNIQUE based on the query
+7. Show the output
+8. Stop the program
+## Query 1:
 ![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/908acbce-7e1f-49ca-b8b5-9dca4e8aef38)
 ### SQL QUERY:
 CREATE TABLE Employee (eid INTEGER PRIMARY KEY AUTOINCREMENT,name VARCHAR(50),designation VARCHAR(30));
 ### OUTPUT:
 ![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/c0f06a33-4afd-4c30-b74b-8ffb47f022a6)
-### Query:
+### Query 2:
 ![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/9ffc13e7-7791-46e5-b648-2aa451948bec)
 ### SQL QUERY: 
 ![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/fdbfa19a-cd78-44b2-ac75-dd9e0c1382c9)
 ### OUTPUT:
 ![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/3135af0b-9d2f-4049-a778-3b461e12d7b5)
-### 
+### Query 3:
 
 ### SQL QUERY: 
 
 ### OUTPUT:
-
-### 4) Rename the student table to mystudent
-
-### SQL QUERY: 
-
-
-
-### OUTPUT:
-
-### 5) Delete the mystudent rows using truncate keyword
+### Query 4:
 
 ### SQL QUERY: 
 
-
 ### OUTPUT:
-### 4) Drop the mystudent table
- 
+### Query 5:
+
 ### SQL QUERY: 
 
+### OUTPUT:
+### Query 6:
+
+### SQL QUERY: 
 
 ### OUTPUT:
+### Query 7:
 
+### SQL QUERY: 
 
+### OUTPUT:
+### Query 8:
 
+### SQL QUERY: 
 
+### OUTPUT:
+### Query 9:
 
+### SQL QUERY: 
 
+### OUTPUT:
+### Query 10:
 
+### SQL QUERY: 
+
+### OUTPUT:
 
 ## Result:
-         Thus the basic DDL commands in SQL are executed. 
+         Thus the basic DDL commands and constraints in SQL are executed. 
 
 
