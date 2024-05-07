@@ -1,8 +1,9 @@
 # EX.NO 2 Data Manipulation Language (DML) Commands and built in functions in SQL
-
+### DATE:
+#### REGISTER NUMBER:
 ## AIM:
 To Study and write DML Commands for given query.
-# THEORY
+## THEORY
 ## DML(Data Manipulation Language)
 *  The SQL commands that deal with the manipulation of data present in the database belong to DML or Data Manipulation Language and this includes most of the SQL statements.
 *  It is the component of the SQL statement that controls access to data and to the database. Basically, DCL statements are grouped with DML statements.
@@ -32,150 +33,82 @@ c) Inserting multiple records
    Syntax: 
    SELECT (column1,column2) FROM (Table Name)WHERE condition;
 ```
-# THEORY 
 ## PROCEDURE
+```
 1. Start the program. 
 2. Read the given query.
-3. create the table using 
-        CREATE TABLE (field_1 data_type(size),field_2 data_type(size), .. . );
-4. Drop the table by  DROP TABLE relation_name;
-5. Alter the table structure of the database by ALTER TABLE relation_name ADD (new field_1 data_type(size) );
-6. Specify the constraints NOT NULL,UNIQUE,DEFAULT,UNIQUE based on the query
+3. insert values into the table using 
+   INSERT INTO < relation/table name> (field_1,field_2……field_n)VALUES (data_1,data_2, ...... data_n);
+4. Update the existing data within a table by UPDATE command by
+   UPDATE relation name SET Field_name1=data,field_name2=data, WHERE field_name=data;
+5. Delete the records in a table by DELETE command
+   DELETE FROM relation_name WHERE condition;
+6. Use  SELECT command shows the records of the specified table.
+     SELECT (column1,column2) FROM (Table Name)WHERE condition;
 7. Show the output
 8. Stop the program
-   # QUERY 
+```
+## QUERY 
 ## QUERY 1
+![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/14403ec0-4bdf-4f4d-9493-c1e89a3eb969)
 ## SQL QUERY 
-## OUTPUT 
-
-## Create the table as given below:
-```sql
-create table manager(enumber number(6),ename char(15),salary number(5),commission number(4),annualsalary number(7),Hiredate date,designation char(10),deptno number(2),reporting char(10));
-```
-## insert the following values into the table
-```sql
-insert into manager values(7369,'Dharsan',2500,500,30000,'30-June-81','clerk',10,'John');
-insert into manager values(7839,'Subu',3000,400,36000,'1-Jul-82','manager',null,'James');
-insert into manager values(7934,'Aadhi',3500,300,42000,'1-May-82','manager',30,NULL);
-insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bond');
-```
-
-### Q1) Update all the records of manager table by increasing 10% of their salary as bonus.
-
-### QUERY:
-
-
-### OUTPUT:
-
-### Q2) Delete the records from manager table where the salary less than 2750.
-
-
-### QUERY:
-
-
-### OUTPUT:
-
-### Q3) Display each name of the employee as “Name” and annual salary as “Annual Salary” (Note: Salary in emp table is the monthly salary)
-
-
-### QUERY:
-
-
-### OUTPUT:
-
-### Q5)	List the names of Clerks from emp table.
-
-
-### QUERY:
-
-
-### OUTPUT:
-
-
-### Q6)	List the names of employee who are not Managers.
-
-
-### QUERY:
-
-
-### OUTPUT:
-
-
-### Q7)	List the names of employees not eligible for commission.
-
-
-### QUERY:
-
-
-### OUTPUT:
-
-
-### Q8)	List employees whose name either start or end with ‘s’.
-
-
-### QUERY:
-
-
-### OUTPUT:
-
-
-### Q9) Sort emp table in ascending order by hire-date and list ename, job, deptno and hire-date.
-
-
-### QUERY:
-
-
-### OUTPUT:
-
-
-### Q10) List the Details of Employees who have joined before 30 Sept 81.
-
-
-### QUERY:
-
-
-### OUTPUT:
-
-
-### Q11)	List ename, deptno and sal after sorting emp table in ascending order by deptno and then descending order by sal.
-
-
-### QUERY:
-
-
-### OUTPUT:
-
-
-### Q12) List the names of employees not belonging to dept no 30,40 & 10
-
-
-### QUERY:
-
-
-### OUTPUT:
-
-### Q13) Find number of rows in the table EMP
-
-### QUERY:
-
-
-### OUTPUT:
-
-
-### Q14) Find maximum, minimum and average salary in EMP table.
-
-### QUERY:
-
-
-### OUTPUT:
-
-
-### Q15) List the jobs and number of employees in each job. The result should be in the descending order of the number of employees.
-
-### QUERY:
-
-
-### OUTPUT:
+select categoryName,description from categories order by categoryName;
+## TEST QUERY AND ITS OUTPUT  
+![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/e876a627-d587-4dc1-a47b-5bdbf6a6f3dd)
+## QUERY 2
+![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/1ecc7406-81b9-49a8-87af-1060e3259731)
+## SQL QUERY 
+SELECT * FROM customer WHERE city = 'London' AND grade > 200;
+## TEST QUERY AND ITS OUTPUT  
+![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/0f5944aa-17e2-480d-89ad-3cae7e530a42)
+## QUERY 3
+![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/c868fa42-61b9-465f-85a7-34ab2c23d23f)
+## SQL QUERY
+SELECT * FROM orders WHERE (purch_amt < 200 OR NOT (ord_date >= '2012-02-10' AND customer_id < 3009));
+## TEST QUERY AND ITS OUTPUT 
+![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/f5af2a79-6e77-4687-9fb9-e94caf16f945)
+# QUERY 4
+![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/334b9113-b1e1-4762-a92e-72bbd778938c)
+## SQL QUERY 
+SELECT * FROM customer WHERE grade IS NULL;
+## TEST QUERY AND ITS OUTPUT  
+![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/3d1e613c-c356-4806-85ef-32f35f2949ee)
+## QUERY 5
+![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/683b7c1b-d5f6-43bd-a8ea-17116b586615)
+## SQL QUERY 
+DELETE FROM surgeries WHERE  surgery_id = 3 or  surgeon_id = 4;
+## TEST QUERY AND ITS OUTPUT 
+![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/42b96061-dd53-4921-975f-99ee9f9c176d)
+## QUERY 6
+![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/ec654473-157e-4113-842b-954c6ad04675)
+## SQL QUERY 
+DELETE FROM customer WHERE OPENING_AMT BETWEEN 4000 AND 6000;
+## TEST QUERY AND ITS OUTPUT 
+![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/c037a869-d401-4765-b88d-87e5e40287c4)
+## QUERY 7
+![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/a3493209-8ced-4051-b2f7-4a7c9c399790)
+## SQL QUERY 
+DELETE FROM customer WHERE LENGTH(CUST_NAME) = 6;
+## TEST QUERY AND ITS OUTPUT 
+![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/317e2d2d-55bd-4b6a-86ad-fa188f0c219c)
+## QUERY 8
+![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/4900a11a-967d-4e3b-b77c-c63f807136c9)
+## SQL QUERY
+UPDATE products SET product_name = 'Grapefruit' WHERE product_id = 4;
+## TEST QUERY AND ITS OUTPUT 
+![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/221f80e8-fbbd-4f49-8b33-c26e921f5d14)
+## QUERY 9
+![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/d3ef85de-b0f9-4e7a-9149-0f9606028daa)
+## SQL QUERY 
+UPDATE suppliers SET supplier_name = 'A1 Suppliers' WHERE supplier_id = 8;
+## TEST QUERY AND ITS OUTPUT 
+![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/c6ebd25e-606f-4db9-8dde-d38bb7a50508)
+## QUERY 10
+![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/cab90fce-a721-4318-8424-54f4f2258e9c)
+## SQL QUERY 
+UPDATE products SET reorder_lvl = 40  WHERE category = 'Grocery';
+## TEST QUERY AND ITS OUTPUT 
+![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/a2da7c2d-4321-45e0-a1ea-20fabd42e805)
 
 
 ## RESULT :
