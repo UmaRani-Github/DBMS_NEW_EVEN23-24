@@ -1,4 +1,5 @@
 # EX.NO 2 Data Manipulation Language (DML) Commands and built in functions in SQL
+
 ## AIM:
 To Study and write DML Commands for given query.
 # THEORY
