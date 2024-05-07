@@ -1,4 +1,4 @@
-# Ex. No: 9 PL/SQL program using Triggers 
+# Ex. No: 9  Triggers in PL/SQL
 ### DATE: 
 ### REGISTER NUMBER:
 ### AIM: 
