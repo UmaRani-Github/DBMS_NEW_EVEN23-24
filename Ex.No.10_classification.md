@@ -1,5 +1,6 @@
-# EX.NO.12: Simulating Classification using WEKA Data mining and Analysis Tool
+# EX.NO.10: Simulating Classification using WEKA Data mining and Analysis Tool
 ## Date: 
+## REGISTER NUMBER
 ## AIM:
 To perform a classification technique using WEKA tool
 ## WEKA:
