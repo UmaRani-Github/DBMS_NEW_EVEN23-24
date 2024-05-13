@@ -1,6 +1,6 @@
 # Ex.No: 7 PL/SQL program to perform addition and subtraction of two number 
-### DATE: 
-### REGISTER NUMBER: 
+### DATE: 10.04.2024
+### REGISTER NUMBER: 212222040050
 ### AIM: To create PL/SQL program to perform addition and subtraction of two number.
 ### PROCEDURE
 1. Declare the variable a, b and necessary variables in Declare section.
