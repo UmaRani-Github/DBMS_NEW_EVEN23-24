@@ -1,6 +1,6 @@
 # EX.NO 4 Aggregation functions, Having and Group By clause in SQL
-### DATE:
-#### REGISTER NUMBER:
+### DATE: 06.03.2024
+#### REGISTER NUMBER: 212222040050 
 ## AIM:
 To study and write aggregation functions, group by and having clause with suitable examples.
 ## THEORY
