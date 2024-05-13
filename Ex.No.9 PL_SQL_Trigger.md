@@ -1,6 +1,6 @@
 # Ex. No: 9  Triggers in PL/SQL
-### DATE: 
-### REGISTER NUMBER:
+### DATE: 24.04.2024
+### REGISTER NUMBER: 212222040050
 ### AIM: 
 To create PL/SQL program to display new and old salary of customer when before/ after updation takes place. 
 ### PROCEDURE
