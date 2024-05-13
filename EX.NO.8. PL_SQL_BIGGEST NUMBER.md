@@ -1,6 +1,6 @@
 # Ex.No:8 PL/SQL program -BIGGEST OF THREE NUMBERS  
-### DATE: 
-### REGISTER NUMBER:
+### DATE: 10.04.2024
+### REGISTER NUMBER: 212222040026
 ### AIM: 
 To create PL/SQL program to find biggest of three numbers.
 ### ALGORITHM:
