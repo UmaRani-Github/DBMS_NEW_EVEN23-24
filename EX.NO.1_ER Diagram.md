@@ -1,6 +1,6 @@
 # EX.NO 1: ER DIAGRAM CREATION, RELATIONAL MODEL AND SCHEMA GENERATION  
 ### DATE: 
-### REGISTER NUMBER: 
+### REGISTER NUMBER: 212222040016
 ## AIM:
 <div align="justify">
    To create an ER Diagram for University Data base or Hospital data base using ERD Plus tool and generate the relational model with schema. 
